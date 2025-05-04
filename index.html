@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel do Instrumentista</title>
+  <style>
+    body {
+  background-image: url('images/background.png');
+  background-repeat: repeat;
+  background-size: auto;
+  background-color: #000000; /* caso a textura não carregue */
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f0f0f0;
+      color: #333333;
+    }
+    header {
+      background-color: #333333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      background-color: #d9d9d9;
+      padding: 1rem;
+    }
+    nav a {
+      background-color: #4d4d4d;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #666666;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .highlight {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333333;
+      color: white;
+      margin-top: 2rem;
+    }
+    .logo {
+      max-height: 80px;
+      margin-bottom: 1rem;
+    }
+    .search {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .search input {
+      padding: 0.7rem;
+      width: 60%;
+      max-width: 400px;
+      border-radius: 6px;
+      border: 1px solid #bbb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Coloque a logo aqui -->
+    <img src="../images/logo.png" alt="Logo do Painel do Instrumentista" width="150">
+    <h1>Painel do Instrumentista</h1>
+    <p>Do básico ao avançado, tudo sobre Instrumentação Industrial em um só lugar.</p>
+</header>
+
+  <nav>
+    <a href="#cursos">Cursos Disponíveis</a>
+    <a href="#biblioteca">Biblioteca Técnica</a>
+    <a href="#blog">Blog e Novidades</a>
+    <a href="#aluno">Área do Aluno</a>
+    <a href="#curiosidades">Curiosidades Técnicas</a>
+  </nav>
+
+  <div class="search">
+    <input type="text" placeholder="Buscar por tema ou instrumento..." />
+  </div>
+
+  <section>
+    <div class="highlight" id="cursos">
+      <h2>Cursos Disponíveis</h2>
+      <p>Conheça nossa trilha completa de aprendizagem, do básico ao avançado.</p>
+    </div>
+    <div class="highlight" id="biblioteca">
+      <h2>Biblioteca Técnica</h2>
+      <p>Manuais, diagramas e documentação organizada para estudo e consulta.</p>
+    </div>
+    <div class="highlight" id="blog">
+      <h2>Blog e Novidades</h2>
+      <p>Acompanhe nossas postagens sobre manutenção, atualizações e tendências.</p>
+    </div>
+    <div class="highlight" id="aluno">
+      <h2>Área do Aluno</h2>
+      <p>Acesse seu conteúdo salvo, acompanhe o progresso e baixe seus certificados.</p>
+    </div>
+    <div class="highlight" id="curiosidades">
+      <h2>Curiosidades Técnicas</h2>
+      <p>Descubra fatos e dicas que só quem vive a instrumentação conhece.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Painel do Instrumentista – Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
