@@ -3,20 +3,43 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cadastro - Painel do Instrumentista</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Registro</title>
 </head>
 <body>
-  <div class="login-container">
-    <h2>Criar Conta</h2>
-    <form id="registerForm">
-      <input type="email" id="registerEmail" placeholder="E-mail" required />
-      <input type="password" id="registerPassword" placeholder="Senha" required />
-      <button type="submit">Cadastrar</button>
-      <p>Já tem conta? <a href="login.html">Entrar</a></p>
-    </form>
-  </div>
-  <script src="auth.js"></script>
+  <h2>Registro</h2>
+  <form id="registerForm">
+    <input type="text" id="email" placeholder="E-mail" required /><br />
+    <input type="password" id="senha" placeholder="Senha" required /><br />
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <script>
+    document.getElementById("registerForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const email = document.getElementById("email").value;
+      const senha = document.getElementById("senha").value;
+
+      fetch("/register", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({ email, senha }),
+})
+  .then((res) => {
+    if (res.ok) {
+      alert("Usuário registrado com sucesso!");
+      window.location.href = "login.html";
+    } else {
+      alert("Erro ao registrar usuário.");
+    }
+  })
+  .catch((err) => {
+    console.error("Erro:", err);
+    alert("Erro na requisição.");
+  });
+    });
+  </script>
 </body>
 </html>
