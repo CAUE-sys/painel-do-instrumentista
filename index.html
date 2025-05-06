@@ -50,17 +50,18 @@
       gap: 10px;
     }
 
-    .menu button {
+    .menu-button {
       background-color: #666;
       color: white;
       padding: 10px 20px;
-      border: none;
       border-radius: 8px;
       cursor: pointer;
       font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
     }
 
-    .menu button:hover {
+    .menu-button:hover {
       background-color: #888;
     }
 
@@ -105,10 +106,10 @@
     }
 
     .carousel-container {
-  position: relative;
-  width: 100%;
-  height: 350px;
-}
+      position: relative;
+      width: 100%;
+      height: 350px;
+    }
 
     .carousel-slide {
       position: absolute;
@@ -126,11 +127,11 @@
     }
 
     .carousel-slide img {
-  width: 100%;
-  height: 350px;
-  object-fit: contain;
-  background-color: #000; /* ou #1c1c1c para combinar com o fundo */
-}
+      width: 100%;
+      height: 350px;
+      object-fit: contain;
+      background-color: #000;
+    }
 
     .slide-text {
       position: absolute;
@@ -181,20 +182,20 @@
       </div>
     </div>
     <div class="auth-buttons">
-      <button>Login</button>
-      <button>Registrar</button>
+      <a href="login.html" class="auth-button">LOGIN</a>
+      <a href="register.html" class="auth-button">REGISTRO</a>
     </div>
   </header>
 
   <!-- Menu de navegação -->
   <div class="menu">
-    <button>Curso Iniciante</button>
-    <button>Curso Intermediário</button>
-    <button>Curso Avançado</button>
-    <button>Biblioteca Técnica</button>
-    <button>Blog</button>
-    <button>Área do Aluno</button>
-    <button>Dashboard</button>
+    <a href="curso-iniciante.html" class="menu-button">Curso Iniciante</a>
+    <a href="curso-intermediario.html" class="menu-button">Curso Intermediário</a>
+    <a href="curso-avancado.html" class="menu-button">Curso Avançado</a>
+    <a href="biblioteca.html" class="menu-button">Biblioteca Técnica</a>
+    <a href="blog.html" class="menu-button">Blog</a>
+    <a href="aluno.html" class="menu-button">Área do Aluno</a>
+    <a href="dashboard.html" class="menu-button">Dashboard</a>
   </div>
 
   <!-- Banner de impacto -->
@@ -203,6 +204,7 @@
     <p>Com conhecimento prático, técnico e atualizado sobre Instrumentação Industrial.</p>
   </section>
 
+  <!-- Carrossel -->
   <section class="carousel">
     <div class="carousel-container" id="carousel">
       <div class="carousel-slide active">
