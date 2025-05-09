@@ -2,65 +2,98 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Curso Intermediário - Painel do Instrumentista</title>
   <style>
     body {
-      background-color: #1a1a1a;
-      color: #fff;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #111;
+      color: #fff;
     }
     header {
-      background: linear-gradient(to right, #6a11cb, #2575fc);
+      background: linear-gradient(135deg, #6e00ff, #9a4dff);
+      padding: 1rem;
       text-align: center;
-      padding: 2rem 1rem;
     }
     header img {
-      max-height: 80px;
-    }
-    header h1 {
-      margin: 1rem 0 0.5rem;
+      height: 80px;
     }
     main {
       padding: 2rem;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
-    .curso {
-      background: #2a2a2a;
-      border-radius: 8px;
-      padding: 1.5rem;
+    h1, h2 {
+      color: #fff;
+    }
+    .video-section {
       margin-bottom: 2rem;
     }
-    footer {
-      background-color: #111;
-      text-align: center;
-      padding: 1rem;
-      color: #aaa;
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    a {
+      color: #9aafff;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="../images/logo.png" alt="Logo Painel do Instrumentista">
+    <img src="images/logo.png" alt="Logo do Painel do Instrumentista">
     <h1>Curso Intermediário</h1>
-    <p>Transmissores, posicionadores, comunicação HART e PACTware</p>
+    <p><a href="../Paginainicial/paginainicial.html">⬅ Voltar ao Painel</a></p>
   </header>
   <main>
-    <div class="curso">
-      <h2>Conteúdo do Curso</h2>
-      <ul>
-        <li>Vídeo-aulas completas</li>
-        <li>Materiais em PDF para estudo</li>
-        <li>Quiz ao final de cada módulo</li>
-        <li>Certificado digital de conclusão</li>
-      </ul>
+    <h2>📘 Módulo Intermediário</h2>
+    <h2>Módulo 1 – Configuração e Calibração</h2>
+    <p>Configuração de transmissores HART, ajuste de span e zero, uso de calibradores e multímetros, práticas com simuladores.</p>
+    <div class="video-grid">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Vídeo 1"></iframe>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Vídeo 2"></iframe>
     </div>
+
+    <h2>Módulo 2 – Introdução à Comunicação Digital</h2>
+    <p>O que é protocolo HART, modbus e fieldbus; como interpretar sinais digitais; conceitos de polling e transmissão de dados.</p>
+    <div class="video-grid">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="Vídeo 3"></iframe>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" title="Vídeo 4"></iframe>
+    </div>
+
+    <h2>Módulo 3 – Análise de Sinais e Diagnósticos</h2>
+    <p>Identificação de falhas comuns, análise de ruídos em sinais analógicos, detecção de loop aberto e sinais erráticos.</p>
+    <div class="video-grid">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_5" title="Vídeo 5"></iframe>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_6" title="Vídeo 6"></iframe>
+    </div>
+
+    <h2>Módulo 4 – Aplicações Práticas</h2>
+    <p>Instalação de transmissores, leitura de diagramas elétricos, medições em bancada, cuidados com segurança e aterramento.</p>
+    <div class="video-grid">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_7" title="Vídeo 7"></iframe>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_8" title="Vídeo 8"></iframe>
+    </div>
+
+    <!-- Recursos finais -->
+    <h2>Recursos</h2>
+    <ul>
+      <li>📄 PDFs para consulta e apoio aos vídeos</li>
+      <li>🧠 Quiz para testar os conhecimentos após assistir cada módulo</li>
+      <li>🎓 Certificado digital ao final do curso</li>
+    </ul>
   </main>
-  <footer>
-    <p>&copy; 2025 Painel do Instrumentista</p>
-  </footer>
 </body>
 </html>
