@@ -2,88 +2,95 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Curso Avançado | Painel do Instrumentista</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Curso Avançado - Painel do Instrumentista</title>
   <style>
     body {
-      background-image: url('../images/background.png');
-      background-repeat: repeat;
-      background-size: auto;
-      background-color: #111;
-      color: #fff;
       font-family: Arial, sans-serif;
       margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #fff;
     }
     header {
-      background: linear-gradient(to right, #5a189a, #9d4edd);
-      color: white;
-      padding: 2rem;
+      background: linear-gradient(135deg, #6e00ff, #9a4dff);
+      padding: 1rem;
       text-align: center;
     }
-    section {
+    header img {
+      height: 80px;
+    }
+    main {
       padding: 2rem;
       max-width: 1000px;
       margin: auto;
     }
-    .highlight {
-      background-color: #ffffff;
-      color: #000;
-      border-radius: 10px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    h1, h2 {
+      color: #fff;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
       margin-bottom: 2rem;
+    }
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
     }
     ul {
       padding-left: 1.5rem;
     }
     a {
-      color: #9d4edd;
+      color: #9aafff;
       text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #333;
-      color: white;
-      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="images/logo.png" alt="Logo do Painel do Instrumentista">
     <h1>Curso Avançado</h1>
-    <p>Aprofunde seus conhecimentos em instrumentação industrial</p>
+    <p><a href="../Paginainicial/paginainicial.html">⬅ Voltar ao Painel</a></p>
   </header>
-
-  <section>
-    <div class="highlight">
-      <h2>Conteúdo Programático</h2>
-      <ul>
-        <li>Calibração avançada de instrumentos</li>
-        <li>Loop de controle e tuning</li>
-        <li>Interpretação de diagramas P&ID</li>
-        <li>Montagem e análise de projetos de instrumentação</li>
-      </ul>
+  <main>
+    <h2>Módulo 1 – Integração de Sistemas</h2>
+    <p>Integração entre CLPs e transmissores, uso de sistemas supervisórios, redes industriais (PROFIBUS, MODBUS TCP/IP, Ethernet/IP).</p>
+    <div class="video-grid">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Vídeo 1"></iframe>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Vídeo 2"></iframe>
     </div>
 
-    <div class="highlight">
-      <h2>Recursos do Curso</h2>
-      <ul>
-        <li>Vídeo-aulas explicativas</li>
-        <li>Materiais de apoio em PDF</li>
-        <li>Quiz ao final de cada módulo</li>
-        <li>Certificado digital de conclusão</li>
-      </ul>
+    <h2>Módulo 2 – Diagnóstico Profundo e Manutenção Avançada</h2>
+    <p>Uso de ferramentas de diagnóstico (PACTware, AMS), análise de falhas intermitentes, leitura de logs de eventos.</p>
+    <div class="video-grid">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="Vídeo 3"></iframe>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" title="Vídeo 4"></iframe>
     </div>
 
-    <p><a href="../index.html">Voltar para a página principal</a></p>
-  </section>
+    <h2>Módulo 3 – Protocolos e Configurações Avançadas</h2>
+    <p>Configuração detalhada de instrumentos via protocolo, endereçamento, parametrização remota, multidrop e burst mode.</p>
+    <div class="video-grid">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_5" title="Vídeo 5"></iframe>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_6" title="Vídeo 6"></iframe>
+    </div>
 
-  <footer>
-    <p>&copy; 2025 Painel do Instrumentista – Todos os direitos reservados</p>
-  </footer>
+    <h2>Módulo 4 – Casos Reais e Estudos de Campo</h2>
+    <p>Estudo de falhas reais em campo, análises de causa raiz (RCA), melhores práticas em startups e comissionamento.</p>
+    <div class="video-grid">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_7" title="Vídeo 7"></iframe>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_8" title="Vídeo 8"></iframe>
+    </div>
+
+    <!-- Recursos finais -->
+    <h2>Recursos</h2>
+    <ul>
+      <li>📄 PDFs técnicos avançados para estudo</li>
+      <li>🧠 Quiz após cada módulo com perguntas técnicas complexas</li>
+      <li>🎓 Certificado digital de conclusão</li>
+    </ul>
+  </main>
 </body>
 </html>
