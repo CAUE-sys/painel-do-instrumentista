@@ -5,12 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Painel do Instrumentista</title>
   <style>
+
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #1c1c1c;
-      color: #fff;
-    }
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1c1c1c;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+/* Vídeo de fundo */
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+  object-fit: cover;
+}
+
+/* Camada escura sobre o vídeo para facilitar leitura */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65); /* Ajuste a opacidade aqui */
+  z-index: -1;
+}
 
     header {
       background-color: #2e2e2e;
@@ -130,7 +155,7 @@
       width: 100%;
       height: 350px;
       object-fit: contain;
-      background-color: #000;
+      background-color: #00000000;
     }
 
     .slide-text {
@@ -171,9 +196,61 @@
   </style>
 </head>
 <body>
+  <body>
 
-  <!-- Cabeçalho -->
-  <header>
+    <!-- Vídeo de fundo global -->
+<video autoplay muted loop playsinline id="bg-video">
+  <source src="videos/fundo3.mp4">
+  Seu navegador não suporta vídeo em HTML5.
+</video>
+
+<style>
+  /* Vídeo de fundo global */
+  #bg-video {
+    position: fixed;
+    top: 0; left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -10;
+    opacity: 0.5;
+  }
+
+  /* Overlay para escurecer vídeo atrás dos textos */
+  .overlay-section {
+    position: relative;
+    z-index: 1;
+  }
+
+  .overlay-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+  }
+
+  .impact-banner,
+  header {
+    position: relative;
+    background: none; /* remove qualquer imagem antiga */
+  }
+
+  .impact-banner h2,
+  .impact-banner p,
+  header h1,
+  header p {
+    position: relative;
+    z-index: 2;
+  }
+</style>
+  
+    <!-- Camada escura sobre o vídeo -->
+    <div class="overlay"></div>
+
+<!-- Cabeçalho -->
+<header class="overlay-section">
     <div class="logo-container">
       <img src="images/logo.png" alt="Logo Painel do Instrumentista">
       <div>
@@ -181,7 +258,7 @@
         <div class="subtitulo">Do básico ao avançado, tudo sobre Instrumentação Industrial em um só lugar.</div>
       </div>
     </div>
-    <div class="auth-buttons">
+    <div class="impact-banner overlay-section">
       <a href="login.html" class="auth-button">LOGIN</a>
       <a href="register.html" class="auth-button">REGISTRO</a>
     </div>
@@ -209,11 +286,11 @@
     <div class="carousel-container" id="carousel">
       <div class="carousel-slide active">
         <img src="images/banner1.png" alt="Curso de Pressão">
-        <div class="slide-text">Curso de Transmissores de Pressão</div>
+        <div class="slide-text">Introdução ao PACTware e Interfaces HART</div>
       </div>
       <div class="carousel-slide">
         <img src="images/banner2.png" alt="Curso com PACTware">
-        <div class="slide-text">Introdução ao PACTware e Interfaces HART</div>
+        <div class="slide-text">Curso de Transmissores de Pressão</div>
       </div>
       <div class="carousel-slide">
         <img src="images/banner3.png" alt="Certificação">
