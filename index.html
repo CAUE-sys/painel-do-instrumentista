@@ -9,7 +9,7 @@
     body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #1c1c1c;
+  background-color: #000000;
   color: #fff;
   position: relative;
   z-index: 1;
@@ -33,7 +33,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.65); /* Ajuste a opacidade aqui */
+  background: rgba(0, 0, 0, 0.87); /* Ajuste a opacidade aqui */
   z-index: -1;
 }
 
@@ -133,7 +133,7 @@
     .carousel-container {
       position: relative;
       width: 100%;
-      height: 350px;
+      height: 500px;
     }
 
     .carousel-slide {
@@ -153,7 +153,7 @@
 
     .carousel-slide img {
       width: 100%;
-      height: 350px;
+      height: 500px;
       object-fit: contain;
       background-color: #00000000;
     }
@@ -161,10 +161,10 @@
     .slide-text {
       position: absolute;
       bottom: 20px;
-      left: 30px;
-      background-color: rgba(0, 0, 0, 0.6);
+      left: 500px;
+      background-color: rgb(255, 255, 255);
       padding: 12px 20px;
-      color: white;
+      color: rgb(0, 0, 0);
       border-radius: 8px;
       font-size: 1.2rem;
     }
@@ -252,7 +252,7 @@
 <!-- Cabeçalho -->
 <header class="overlay-section">
     <div class="logo-container">
-      <img src="images/logo.png" alt="Logo Painel do Instrumentista">
+      <img src="images/pro-tec.png" alt="Logo Painel do Instrumentista">
       <div>
         <h1>Painel do Instrumentista</h1>
         <div class="subtitulo">Do básico ao avançado, tudo sobre Instrumentação Industrial em um só lugar.</div>
@@ -272,14 +272,141 @@
     <a href="biblioteca.html" class="menu-button">Biblioteca Técnica</a>
     <a href="blog.html" class="menu-button">Blog</a>
     <a href="aluno.html" class="menu-button">Área do Aluno</a>
-    <a href="dashboard.html" class="menu-button">Dashboard</a>
   </div>
 
   <!-- Banner de impacto -->
   <section class="impact-banner">
     <h2>Transformando Técnicos em Especialistas</h2>
     <p>Com conhecimento prático, técnico e atualizado sobre Instrumentação Industrial.</p>
-  </section>
+  </section> 
+
+  <!-- Barra de pesquisa -->
+  <div class="search-bar">
+    <input type="text" placeholder="Buscar por tema ou instrumento...">
+  </div>
+
+  <!-- Cards de cursos adicionais -->
+  <style>
+    .courses-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+  
+    .course-card {
+      background-color: #ffffff;
+      color: #1a1a1a;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: left;
+      position: relative;
+    }
+  
+    .badge {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background-color: #00cc66;
+      color: white;
+      font-size: 0.75em;
+      padding: 4px 8px;
+      border-radius: 5px;
+    }
+  
+    .course-card h3 {
+      margin-top: 30px;
+      font-size: 1.2em;
+    }
+  
+    .course-card p {
+      margin: 5px 0;
+    }
+  
+    .inscreva-btn {
+      background-color: #ffa500;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+  
+    .course-card a {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  
+    .course-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+   <div class="courses-container">
+    <div class="course-card">
+      <span class="badge">Mais procurado</span>
+      <h3>Instrumentação Básica Presencial</h3>
+      <p><strong>Modalidade:</strong> Presencial</p>
+      <p><strong>Duração:</strong> 2 dias</p>
+      <p><strong>Nível:</strong> Iniciante</p>
+      <p><strong>Valor:</strong> ---------</p>
+      <p><strong>Min. Alunos:</strong> 5</p>
+      <p><strong>Nova Turma:</strong> 12/12/2025</p>
+      <button class="inscreva-btn">Inscreva-se</button>
+      <a href="#">Sobre o Curso</a>
+    </div>
+
+    <div class="course-card">
+      <span class="badge">Mais procurado</span>
+      <h3>Instrumentação Básica On-line</h3>
+      <p><strong>Modalidade:</strong> On-line</p>
+      <p><strong>Duração:</strong> 1 dias</p>
+      <p><strong>Nível:</strong> Iniciante</p>
+      <p><strong>Valor:</strong> Gratuito</p>
+      <p><strong>Min. Alunos:</strong> 1</p>
+      <button class="inscreva-btn">Iniciar</button>
+      <a href="#">Sobre o Curso</a>
+    </div>
+  
+    <div class="course-card">
+      <span class="badge">Mais procurado</span>
+      <h3>Calibração com PACTware</h3>
+      <p><strong>Modalidade:</strong> Presencial / On-line</p>
+      <p><strong>Duração:</strong> 2 dias</p>
+      <p><strong>Nível:</strong> Intermediário</p>
+      <p><strong>Valor:</strong> Gratuito</p>
+      <button class="inscreva-btn">Inscreva-se</button>
+      <a href="#">Sobre o Curso</a>
+    </div>
+
+    <div class="course-card">
+      <span class="badge">Lançamento</span>
+      <h3>Instalação de DTM´s</h3>
+      <p><strong>Modalidade:</strong> On-line</p>
+      <p><strong>Duração:</strong> 1 dia</p>
+      <p><strong>Nível:</strong> Iniciante</p>
+      <p><strong>Valor:</strong> Gratuito</p>
+      <button class="inscreva-btn">Inscreva-se</button>
+      <a href="#">Sobre o Curso</a>
+    </div>
+  
+    <div class="course-card">
+      <span class="badge">Lançamento</span>
+      <h3>Configuração de Transmissores HART</h3>
+      <p><strong>Modalidade:</strong> Presencial</p>
+      <p><strong>Duração:</strong> 2 dias</p>
+      <p><strong>Nível:</strong> Avançado</p>
+      <p><strong>Valor:</strong> Gratuito</p>
+      <button class="inscreva-btn">Inscreva-se</button>
+      <a href="#">Sobre o Curso</a>
+    </div>
+  </div> 
 
   <!-- Carrossel -->
   <section class="carousel">
@@ -299,17 +426,6 @@
     </div>
   </section>
   
-  <!-- Barra de pesquisa -->
-  <div class="search-bar">
-    <input type="text" placeholder="Buscar por tema ou instrumento...">
-  </div>
-
-  <!-- Mensagem de boas-vindas -->
-  <div class="main-box">
-    <h2>Bem-vindo!</h2>
-    <p>Use o menu acima para navegar entre os conteúdos do Painel do Instrumentista.</p>
-  </div>
-
   <!-- Script do carrossel -->
   <script>
     let currentSlide = 0;
