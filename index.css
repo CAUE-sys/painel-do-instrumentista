@@ -160,25 +160,3 @@ header {
   border-radius: 12px;
   text-align: center;
 }
-
-/* Mascote Pro-Tec */
-#protec-container {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  align-items: flex-end;
-  gap: 10px;
-}
-
-#protec-image {
-  height: 80px;
-}
-
-#protec-speech {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 10px 15px;
-  border-radius: 10px;
-  font-size: 0.95rem;
-  max-width: 250px;
-}
